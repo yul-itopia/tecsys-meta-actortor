@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.tecsys.meta.actuator.api.domain.model.Specification</OriginalElement>
+  <nodes>
+    <node x="114.25" y="160.0">com.tecsys.meta.actuator.api.domain.model.SkeletalAlert</node>
+    <node x="270.0" y="79.0">com.tecsys.meta.actuator.api.domain.model.Action</node>
+    <node x="99.0" y="79.0">com.tecsys.meta.actuator.api.domain.model.Specification</node>
+    <node x="0.0" y="79.0">com.tecsys.meta.actuator.api.domain.model.Alert</node>
+    <node x="240.74275362318838" y="0.0">com.tecsys.meta.actuator.api.domain.model.Configuration</node>
+    <node x="31.742753623188378" y="0.0">com.tecsys.meta.actuator.api.domain.model.ValidationResult</node>
+    <node x="178.0" y="-110.0">com.tecsys.meta.actuator.api.domain.service.impl.SlowQueueMessageNotificationService</node>
+    <node x="223.5" y="-189.0">com.tecsys.meta.actuator.api.domain.service.AlertNotificationService</node>
+    <node x="201.61956521739128" y="332.0">com.tecsys.meta.actuator.api.domain.model.QueueMonitor</node>
+    <node x="537.6195652173913" y="344.5">com.tecsys.meta.actuator.api.domain.model.TimerMonitor</node>
+    <node x="554.1195652173913" y="205.5">com.tecsys.meta.actuator.api.domain.model.Monitor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.SkeletalAlert" target="com.tecsys.meta.actuator.api.domain.model.Alert" relationship="REALIZATION">
+      <point x="-76.875" y="-60.0" />
+      <point x="139.875" y="134.0" />
+      <point x="39.5" y="134.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.Alert" target="com.tecsys.meta.actuator.api.domain.model.ValidationResult" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.5" />
+      <point x="39.5" y="59.0" />
+      <point x="104.24275362318838" y="59.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.SkeletalAlert" target="com.tecsys.meta.actuator.api.domain.model.Specification" relationship="TO_ONE">
+      <point x="-25.625" y="-60.0" />
+      <point x="191.125" y="134.0" />
+      <point x="174.0" y="134.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.SkeletalAlert" target="com.tecsys.meta.actuator.api.domain.model.Action" relationship="TO_MANY">
+      <point x="76.875" y="-60.0" />
+      <point x="293.625" y="134.0" />
+      <point x="314.0" y="134.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.QueueMonitor" target="com.tecsys.meta.actuator.api.domain.model.Monitor" relationship="REALIZATION">
+      <point x="105.33333333333331" y="-27.0" />
+      <point x="464.9528985507246" y="306.0" />
+      <point x="603.6195652173913" y="306.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.Specification" target="com.tecsys.meta.actuator.api.domain.model.Configuration" relationship="DEPENDENCY">
+      <point x="37.5" y="-14.5" />
+      <point x="211.5" y="59.0" />
+      <point x="250.61956521739128" y="59.0" />
+      <point x="250.61956521739128" y="49.0" />
+      <point x="273.4927536231884" y="49.0" />
+      <point x="-32.75" y="14.5" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.Specification" target="com.tecsys.meta.actuator.api.domain.model.ValidationResult" relationship="DEPENDENCY">
+      <point x="-37.5" y="-14.5" />
+      <point x="136.5" y="59.0" />
+      <point x="104.24275362318838" y="59.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.TimerMonitor" target="com.tecsys.meta.actuator.api.domain.model.Monitor" relationship="REALIZATION">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.SkeletalAlert" target="com.tecsys.meta.actuator.api.domain.model.Configuration" relationship="DEPENDENCY">
+      <point x="25.625" y="-60.0" />
+      <point x="242.375" y="134.0" />
+      <point x="259.5" y="134.0" />
+      <point x="259.5" y="59.0" />
+      <point x="250.61956521739128" y="59.0" />
+      <point x="250.61956521739128" y="49.0" />
+      <point x="273.4927536231884" y="49.0" />
+      <point x="-32.75" y="14.5" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.service.impl.SlowQueueMessageNotificationService" target="com.tecsys.meta.actuator.api.domain.service.AlertNotificationService" relationship="REALIZATION">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.QueueMonitor" target="com.tecsys.meta.actuator.api.domain.model.SkeletalAlert" relationship="TO_MANY">
+      <point x="-105.33333333333331" y="-27.0" />
+      <point x="254.28623188405797" y="306.0" />
+      <point x="216.75" y="306.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="com.tecsys.meta.actuator.api.domain.model.QueueMonitor" target="com.tecsys.meta.actuator.api.domain.model.Configuration" relationship="TO_MANY">
+      <point x="0.0" y="-27.0" />
+      <point x="359.61956521739125" y="306.0" />
+      <point x="368.5" y="306.0" />
+      <point x="368.5" y="59.0" />
+      <point x="338.9927536231884" y="59.0" />
+      <point x="32.75" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="335.0" y="159.0" />
+  <SelectedNodes>
+    <node>com.tecsys.meta.actuator.api.domain.model.Specification</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
